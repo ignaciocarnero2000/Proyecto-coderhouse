@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Indie Flower', cursive;
+}
+header{
+    background-color: rgba(227, 182, 182, 1);
+    color: rgba(134, 12, 107, 1);
+    font-family: 'Satisfy', cursive;
+}
+li{
+    list-style: none;
+}
+.titulo{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.logo img{
+    width: 100px;
+    border-radius: 50%;
+}
+.tituloP{
+    align-self: flex-end;
+    font-size: xx-large;
+}
+nav .menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+    font-size: x-large;
+}
+.menu li a{
+    color:black;
+    text-decoration: none;
+}
+.cuerpoIndex{
+    background-image: url("https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8c2VhcmNofDE1N3x8RG9nJTIwYW5kJTIwY2F0fGVufDB8fHx8MTY3NDI1Nzg3Mw&ixlib=rb-4.0.3&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:  center;
+    font-size: xx-large;
+    text-shadow: 8px 8px 11px;
+}
+.cuerpoIndex h2{
+    padding: 35px;
+}
+.galery{
+    padding: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items: center;
+    background-color: rgba(217, 217, 217, 0.30);
+    border-radius: 10%;
+    gap: 20px;
+}
+.cards{
+    width: 250px;
+    height:350px;
+    background-color: rgba(217, 217, 217, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    font-size: x-large;
+    font-weight:600;
+    gap: 10px;
+}
+.cards img{
+    width: 200px;
+    border-radius: 10%;
+}
+.cards a{
+    background-color: black;
+    border-radius: 20%;
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 200;
+}
+.imagenes{
+    width: 200px;
+}
+.grids{
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(6,1fr);
+    grid-template-areas:
+    "logo titulo titulo titulo item-4 item-4"
+    "nav nav nav nav nav nav"
+    ;
+}
+.item-1{
+    grid-area: logo;
+    grid-column-start: 1;
+}
+.item-2{
+    grid-area: titulo;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    justify-content: center;
+}
+.item-2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.item-3{
+    grid-area: nav;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    padding-left: 300px;
+}
+.item-3 menu{
+    justify-content: space-evenly;
+}
+.item-4{
+    grid-area: item-4;
+    grid-column-start: 6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: space-between;
+}
+.item-4 img{
+    width: 48px;
+    height: 48px;
+    border-radius: 65%;
+}
+.backgroundPerros{
+    background-image: url("https://media.istockphoto.com/id/481198620/es/foto/terrier-jugando-con-una-pelota-de-coloridos.jpg?b=1&s=170667a&w=0&k=20&c=VDpLMMtIR_X_9WpOfJ6x9vLJ01XCNBs-EzoNLS_hEPg=");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+.titulo2{
+    display: flex;
+    margin-left:20px;
+    margin-bottom: 15px;
+    text-shadow: 8px 8px 11px;;
+}
+.cuerpoGrids{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas: 
+    "camas camas camas"
+    "juguetes juguetes jueguetes"
+    "accesorios accesorios accesorios"
+    ;
+}
+.titulo2{
+    display: flex;
+    justify-content: flex-start;
+}
+.camas{
+    grid-area: camas;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 15px;
+    gap: 15px;
+}
+.cardGrid{
+    background-color: rgba(217, 217, 217, 0.25);
+    padding: 15px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 600;
+    gap: 10px;
+}
+.cardGrid img{
+    width: 200px;
+    border-radius: 10%;
+}
+.cardGrid a{
+    background-color: black;
+    border-radius: 20%;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 200;
+}
+.juguetes{
+    grid-area: juguetes;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin: 15px;
+    gap: 15px;
+}
+.accesorios{
+    grid-area: accesorios;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 15px;
+    gap: 15px;
+}
+.backgroundGatos{
+    background-image: url("https://fotografias.lasexta.com/clipping/cmsimages02/2022/05/17/B2803297-FF70-4425-A1C0-059900EDFAB8/gatos_104.jpg?crop=4000,4000,x710,y0&width=1200&height=1200&optimize=low&format=webply");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; 
+}
+.menuBoots{
+    font-size: x-large;
+}
+.cuepoSobre{
+    display: flex;
+    justify-content:center;
+    flex-flow: column wrap;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1601758175576-648226072e90?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8c2VhcmNofDExM3x8Y2F0LURvZ3xlbnwwfHx8fDE2NzQ0Nzk4NDc&ixlib=rb-4.0.3&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:800px;
+    background-position: center;
+    color: black;
+}
+.background{
+    background-color: rgba(217, 217, 217, 0.25);
+    width: 150vh;
+    font-size: x-large;
+    font-weight: 600;
+    border-radius:10%;
+}
+.background h2{
+    text-decoration: underline;
+}
+footer{
+    background-color: rgba(30, 30, 30, 0.63);
+    color: rgba(255, 255, 255, 1);
+}
+.piePagina{
+    display: flex;
+    justify-content: space-between;
+}
+.contacto{
+    display: flex;
+    gap: 10px;
+}
+.redesSociales{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 25px;
+}
+.redesSociales img{
+    width: 50px;
+}
+.contacto img{
+    width: 50px;
+}
+
+
+/* tablet */
+@media(max-width: 768px) {
+    header{
+        width: 100%;
+    }
+    .tituloP{
+        font-size: x-large;
+    }
+    nav .menu{
+        justify-content: flex-start;
+        font-size: larger;
+        gap: 18px;
+    }
+    .cuerpoIndex{
+        flex-direction: column;
+        font-size: x-large;
+        background:url("../assets/images/Fondo/photo-1623387641168-d9803ddd3f35.jfif") no-repeat center center fixed;
+        background-size: cover;
+    }
+    .galery{
+    padding: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items: center;
+    gap: 20px;
+    background-color:transparent;
+    }
+    .carousel-inner{
+        padding: 20px;
+}
+}
+/* mobile */
+@media(max-width:542px){
+    header{
+        width: 100%;
+    }
+    .titulo{
+        width: 100%;
+        justify-content: space-between;
+        align-self: center;
+        gap:35px;
+    }
+    .logo img{
+        width: 80px;
+        border-radius: 50%;
+    }
+    .tituloP{
+        font-size: medium;
+    }
+    nav .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cuerpoIndex{
+        flex-direction: column;
+        font-size: medium;
+        background:url("../assets/images/Fondo/photo-1623387641168-d9803ddd3f35.jfif") no-repeat center center fixed;
+        background-size: cover;
+    }
+    .galery{
+    padding: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    background-color:transparent;
+    }
+    .piePagina{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contacto{
+        display: flex;
+        flex-direction:row;
+        gap: 15px;
+    }
+    .redesSociales{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 5px;
+        margin: 15px;
+    }
+    .redesSociales img{
+        width: 45px;
+    }
+    .contacto img{
+        width: 45px;
+    }
+    .card-body{
+        gap: 10px;
+        width: 100%;
+    }
+    .section{
+        gap: 20px;
+    }
+    .carousel-inner{
+        width: auto;
+        display: flex;
+        justify-content: flex-start;
+        font-size: xx-small;
+    }
+    .card{
+        font-size: smaller;
+        justify-content: center;
+        justify-self: center;
+    }
+    .card a{
+        font-size: xx-small;
+    }
+}
+@media(max-width:336px){
+    .section{
+        gap: 20px;
+    }
+    .carousel-inner{
+        width: 300px;
+        height: 320px;
+        display: flex;
+        justify-content: flex-start;
+        font-size: xx-small;
+    }
+    .card{
+        font-size: smaller;
+        justify-content: center;
+        justify-self: center;
+    }
+    .card a{
+        font-size: xx-small;
+    }    
+}
+
