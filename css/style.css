@@ -387,23 +387,11 @@ footer{
     }
 }
 @media(max-width:336px){
-    .section{
-        gap: 20px;
-    }
     .carousel-inner{
-        width: 300px;
+        width: 295px;
         height: 320px;
         display: flex;
         justify-content: flex-start;
         font-size: xx-small;
     }
-    .card{
-        font-size: smaller;
-        justify-content: center;
-        justify-self: center;
-    }
-    .card a{
-        font-size: xx-small;
-    }    
 }
-
