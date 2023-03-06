@@ -1,0 +1,41 @@
+.grids{
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(6,1fr);
+    grid-template-areas:
+    "logo titulo titulo titulo item-4 item-4"
+    "nav nav nav nav nav nav"
+    ;
+}
+.item-1{
+    grid-area: logo;
+    grid-column-start: 1;
+}
+.item-2{
+    grid-area: titulo;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.item-3{
+    grid-area: nav;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    padding-left: 300px;
+    menu{
+        justify-content: space-evenly;
+    }
+}
+.item-4{
+    grid-area: item-4;
+    grid-column-start: 6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: space-between;
+    img{
+        width: 48px;
+        height: 48px;
+        border-radius: 65%;
+    }
+}

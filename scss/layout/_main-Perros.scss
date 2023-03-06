@@ -1,0 +1,71 @@
+.backgroundPerros{
+    background-image: url("https://media.istockphoto.com/id/481198620/es/foto/terrier-jugando-con-una-pelota-de-coloridos.jpg?b=1&s=170667a&w=0&k=20&c=VDpLMMtIR_X_9WpOfJ6x9vLJ01XCNBs-EzoNLS_hEPg=");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+.titulo2{
+    display: flex;
+    margin-left:20px;
+    margin-bottom: 15px;
+    text-shadow: 8px 8px 11px;
+    justify-content: flex-start;
+}
+.cuerpoGrids{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas: 
+    "camas camas camas"
+    "juguetes juguetes jueguetes"
+    "accesorios accesorios accesorios"
+    ;
+}
+.camas{
+    grid-area: camas;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 15px;
+    gap: 15px;
+}
+.cardGrid{
+    background-color: rgba(217, 217, 217, 0.25);
+    padding: 15px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 600;
+    gap: 10px;
+    img{
+        width: $imagenes;
+        border-radius: 10%;
+    }
+    a{
+        background-color: black;
+        border-radius: 20%;
+        color: white;
+        text-decoration: none;
+        font-size: large;
+        font-weight: 200;
+    }
+}
+.juguetes{
+    grid-area: juguetes;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin: 15px;
+    gap: 15px;
+}
+.accesorios{
+    grid-area: accesorios;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 15px;
+    gap: 15px;
+}

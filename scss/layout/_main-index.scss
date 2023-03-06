@@ -1,0 +1,45 @@
+.cuerpoIndex{
+    background-image: url("https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8c2VhcmNofDE1N3x8RG9nJTIwYW5kJTIwY2F0fGVufDB8fHx8MTY3NDI1Nzg3Mw&ixlib=rb-4.0.3&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    @include flex(row wrap,space-around,center);
+    font-size: xx-large;
+    text-shadow: 8px 8px 11px;
+    h2{
+        padding: 35px;
+    }
+}
+.galery{
+    padding: 200px;
+    display: flex;
+    @include flex(row wrap,space-around,center);
+    background-color:$fondo;
+    border-radius: 10%;
+    gap: 20px;
+}
+.cards{
+    width: 250px;
+    height:350px;
+    background-color:$fondo;
+    @include flex(column wrap,center,center);
+    border-radius: 10%;
+    font-size: x-large;
+    font-weight:600;
+    gap: 10px;
+    img{
+        width: $imagenes;
+        border-radius: 10%;
+    }
+    a{
+        background-color: black;
+        border-radius: 20%;
+        color: white;
+        text-decoration: none;
+        font-size: x-large;
+        font-weight: 200;
+    }
+}
+.imagenes{
+    width: $imagenes;
+}

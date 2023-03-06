@@ -1,0 +1,82 @@
+@media(max-width:542px){
+    header{
+        width: 100%;
+    }
+    .titulo{
+        width: 100%;
+        justify-content: space-between;
+        align-self: center;
+        gap:35px;
+    }
+    .logo img{
+        width: 80px;
+        border-radius: 50%;
+    }
+    .tituloP{
+        font-size: medium;
+    }
+    nav .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cuerpoIndex{
+        flex-direction: column;
+        font-size: medium;
+        background:url("../assets/images/Fondo/photo-1623387641168-d9803ddd3f35.jfif") no-repeat center center fixed;
+        background-size: cover;
+    }
+    .galery{
+    padding: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    background-color:transparent;
+    }
+    .piePagina{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contacto{
+        display: flex;
+        flex-direction:row;
+        gap: 15px;
+    }
+    .redesSociales{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 5px;
+        margin: 15px;
+    }
+    .redesSociales img{
+        width: 45px;
+    }
+    .contacto img{
+        width: 45px;
+    }
+    .card-body{
+        gap: 10px;
+        width: 100%;
+    }
+    .section{
+        gap: 20px;
+    }
+    .carousel-inner{
+        width: auto;
+        display: flex;
+        justify-content: flex-start;
+        font-size: xx-small;
+    }
+    .card{
+        font-size: smaller;
+        justify-content: center;
+        justify-self: center;
+    }
+    .card a{
+        font-size: xx-small;
+    }
+}

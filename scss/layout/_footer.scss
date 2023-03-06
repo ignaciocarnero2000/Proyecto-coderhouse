@@ -1,0 +1,23 @@
+footer{
+    background-color: rgba(30, 30, 30, 0.63);
+    color: rgba(255, 255, 255, 1);
+}
+.piePagina{
+    display: flex;
+    justify-content: space-between;
+}
+.contacto{
+    display: flex;
+    gap: 10px;
+    img{
+        width: $logos;
+    }
+}
+.redesSociales{
+    @include flex(column wrap,space-between,center);
+    gap: 15px;
+    margin: 25px;
+    img{
+        width: $logos;
+    }
+}
