@@ -233,6 +233,8 @@ footer {
 .contacto {
   display: flex;
   gap: 10px; }
+  .contacto li {
+    list-style: none; }
   .contacto img {
     width: 50px; }
 
@@ -243,6 +245,8 @@ footer {
   align-items: center;
   gap: 15px;
   margin: 25px; }
+  .redesSociales li {
+    list-style: none; }
   .redesSociales img {
     width: 50px; }
 

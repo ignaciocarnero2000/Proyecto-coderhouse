@@ -9,6 +9,9 @@ footer{
 .contacto{
     display: flex;
     gap: 10px;
+    li{
+        list-style: none;
+    }
     img{
         width: $logos;
     }
@@ -17,6 +20,9 @@ footer{
     @include flex(column wrap,space-between,center);
     gap: 15px;
     margin: 25px;
+    li{
+        list-style: none;
+    }
     img{
         width: $logos;
     }
