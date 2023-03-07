@@ -1,0 +1,24 @@
+
+@media (max-width: 1232px) {
+.item-3{
+    padding-left: 50px;
+    gap: 50px;
+}
+    .camas{
+    grid-template-columns: repeat(2,1fr);
+}
+.juguetes{
+    grid-template-columns: repeat(2,1fr);
+}
+.accesorios{
+    grid-template-columns: repeat(2,1fr);
+}
+.cuerposobre{
+    width: 100%;
+    height: none;
+}
+.background{
+    border-radius: 12%;
+    font-size: large;
+}
+}

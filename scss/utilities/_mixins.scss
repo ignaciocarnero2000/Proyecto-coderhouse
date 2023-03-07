@@ -4,3 +4,10 @@
     justify-content: $justify;
     align-items: $aling;
 }
+@mixin grid($area,$columns,$margin,$gap){
+    display: grid;
+    grid-area: $area;
+    grid-template-columns: $columns;
+    margin: $margin;
+    gap: $gap;
+}

@@ -24,11 +24,7 @@
     ;
 }
 .camas{
-    grid-area: camas;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin: 15px;
-    gap: 15px;
+    @include grid(camas,1fr 1fr 1fr 1fr 1fr,15px,15px);
 }
 .cardGrid{
     background-color: rgba(217, 217, 217, 0.25);
@@ -54,18 +50,10 @@
     }
 }
 .juguetes{
-    grid-area: juguetes;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    @include grid(juguetes, 1fr 1fr 1fr 1fr 1fr,15px,15px);
     grid-column-start: 1;
     grid-column-end: 5;
-    margin: 15px;
-    gap: 15px;
 }
 .accesorios{
-    grid-area: accesorios;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin: 15px;
-    gap: 15px;
+    @include grid(accesorios, 1fr 1fr 1fr 1fr 1fr,15px,15px);
 }

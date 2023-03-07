@@ -103,14 +103,14 @@ header {
   grid-column-start: 3;
   grid-column-end: 5;
   justify-content: center;
-  display: flex;
-  justify-content: space-evenly; }
+  display: flex; }
 
 .item-3 {
   grid-area: nav;
   grid-column-start: 1;
   grid-column-end: 6;
-  padding-left: 300px; }
+  padding-left: 150px;
+  gap: 100px; }
   .item-3 menu {
     justify-content: space-evenly; }
 
@@ -147,8 +147,8 @@ header {
   grid-template-areas: "camas camas camas" "juguetes juguetes jueguetes" "accesorios accesorios accesorios"; }
 
 .camas {
-  grid-area: camas;
   display: grid;
+  grid-area: camas;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin: 15px;
   gap: 15px; }
@@ -175,17 +175,17 @@ header {
     font-weight: 200; }
 
 .juguetes {
-  grid-area: juguetes;
   display: grid;
+  grid-area: juguetes;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-column-start: 1;
-  grid-column-end: 5;
   margin: 15px;
-  gap: 15px; }
+  gap: 15px;
+  grid-column-start: 1;
+  grid-column-end: 5; }
 
 .accesorios {
-  grid-area: accesorios;
   display: grid;
+  grid-area: accesorios;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin: 15px;
   gap: 15px; }
@@ -215,7 +215,7 @@ header {
 
 .background {
   background-color: rgba(217, 217, 217, 0.25);
-  width: 150vh;
+  width: auto;
   font-size: x-large;
   font-weight: 600;
   border-radius: 10%; }
@@ -250,6 +250,23 @@ footer {
   .redesSociales img {
     width: 50px; }
 
+@media (max-width: 1232px) {
+  .item-3 {
+    padding-left: 50px;
+    gap: 50px; }
+  .camas {
+    grid-template-columns: repeat(2, 1fr); }
+  .juguetes {
+    grid-template-columns: repeat(2, 1fr); }
+  .accesorios {
+    grid-template-columns: repeat(2, 1fr); }
+  .cuerposobre {
+    width: 100%;
+    height: none; }
+  .background {
+    border-radius: 12%;
+    font-size: large; } }
+
 @media (max-width: 768px) {
   header {
     width: 100%; }
@@ -272,8 +289,28 @@ footer {
     align-items: center;
     gap: 20px;
     background-color: transparent; }
+  .backgroundPerros {
+    background-image: url("https://media.istockphoto.com/id/481198620/es/foto/terrier-jugando-con-una-pelota-de-coloridos.jpg?b=1&s=170667a&w=0&k=20&c=VDpLMMtIR_X_9WpOfJ6x9vLJ01XCNBs-EzoNLS_hEPg=") no-repeat center center fixed; }
+  .camas {
+    grid-template-columns: repeat(2, 1fr); }
+  .juguetes {
+    grid-template-columns: repeat(2, 1fr); }
+  .accesorios {
+    grid-template-columns: repeat(2, 1fr); }
+  .backgroundGatos {
+    background-image: url("https://fotografias.lasexta.com/clipping/cmsimages02/2022/05/17/B2803297-FF70-4425-A1C0-059900EDFAB8/gatos_104.jpg?crop=4000,4000,x710,y0&width=1200&height=1200&optimize=low&format=webply") no-repeat center center fixed;
+    color: white; }
   .carousel-inner {
-    padding: 20px; } }
+    padding: 20px; }
+  .cuerposobre {
+    background-image: url("https://images.unsplash.com/photo-1601758175576-648226072e90?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8c2VhcmNofDExM3x8Y2F0LURvZ3xlbnwwfHx8fDE2NzQ0Nzk4NDc&ixlib=rb-4.0.3&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450") no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: none; }
+  .background {
+    font-size: medium;
+    border-radius: 12%; } }
 
 @media (max-width: 542px) {
   header {
@@ -338,12 +375,32 @@ footer {
     justify-content: center;
     justify-self: center; }
   .card a {
-    font-size: xx-small; } }
+    font-size: xx-small; }
+  .grids {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; }
+  .camas {
+    grid-template-columns: 1fr; }
+  .juguetes {
+    grid-template-columns: 1fr; }
+  .accesorios {
+    grid-template-columns: 1fr; } }
 
-@media (max-width: 336px) {
+@media (max-width: 379px) {
   .carousel-inner {
     width: 295px;
     height: 320px;
     display: flex;
     justify-content: flex-start;
-    font-size: xx-small; } }
+    font-size: xx-small; }
+  .item1 {
+    width: 80px; }
+  .tem-2 {
+    font-size: smaller; }
+  .item-4 {
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px; }
+    .item-4 img {
+      width: 35px;
+      height: 35px; } }

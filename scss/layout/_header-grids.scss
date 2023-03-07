@@ -16,13 +16,13 @@
     grid-column-end: 5;
     justify-content: center;
     display: flex;
-    justify-content: space-evenly;
 }
 .item-3{
     grid-area: nav;
     grid-column-start: 1;
     grid-column-end: 6;
-    padding-left: 300px;
+    padding-left: 150px;
+    gap: 100px;
     menu{
         justify-content: space-evenly;
     }

@@ -79,4 +79,17 @@
     .card a{
         font-size: xx-small;
     }
+    .grids{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .camas{
+        grid-template-columns: 1fr;
+    }
+    .juguetes{
+        grid-template-columns: 1fr;
+    }
+    .accesorios{
+        grid-template-columns: 1fr;
+    }
 }
