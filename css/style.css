@@ -310,7 +310,7 @@ footer {
     height: none; }
   .background {
     font-size: medium;
-    border-radius: 12%; } }
+    border-radius: 10%; } }
 
 @media (max-width: 542px) {
   header {
@@ -384,7 +384,10 @@ footer {
   .juguetes {
     grid-template-columns: 1fr; }
   .accesorios {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .background {
+    font-size: small;
+    border-radius: 10%; } }
 
 @media (max-width: 379px) {
   .carousel-inner {
