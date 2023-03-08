@@ -42,6 +42,8 @@ header {
   background-image: url("https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8c2VhcmNofDE1N3x8RG9nJTIwYW5kJTIwY2F0fGVufDB8fHx8MTY3NDI1Nzg3Mw&ixlib=rb-4.0.3&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -138,6 +140,8 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   padding: 10px; }
 
 .titulo2 {
@@ -210,13 +214,12 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   width: 100%; }
 
 .menuBoots {
-  font-size: x-large;
-  background: linear-gradient(to bottom left #00C9C7 #005B5F);
-  width: 100%;
-  height: auto; }
+  font-size: x-large; }
 
 .cuepoSobre {
   display: flex;
@@ -226,6 +229,8 @@ header {
   background-image: url("https://images.unsplash.com/photo-1601758175576-648226072e90?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8c2VhcmNofDExM3x8Y2F0LURvZ3xlbnwwfHx8fDE2NzQ0Nzk4NDc&ixlib=rb-4.0.3&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   width: 100%;
   height: 800px;
   background-position: center;
@@ -359,6 +364,41 @@ footer {
     align-items: center;
     gap: 10px;
     background-color: transparent; }
+  .grids {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; }
+  .item-4 {
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px; }
+    .item-4 img {
+      width: 35px;
+      height: 35px; }
+  .camas {
+    grid-template-columns: 1fr; }
+  .juguetes {
+    grid-template-columns: 1fr; }
+  .accesorios {
+    grid-template-columns: 1fr; }
+  .carousel-inner {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    font-size: xx-small; }
+  .card-body {
+    gap: 10px;
+    width: 100%; }
+  .section {
+    gap: 20px; }
+  .card {
+    font-size: smaller;
+    justify-content: center;
+    justify-self: center; }
+    .card a {
+      font-size: xx-small; }
+  .background {
+    font-size: small;
+    border-radius: 10%; }
   .piePagina {
     display: flex;
     flex-direction: column;
@@ -367,6 +407,8 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 15px; }
+    .contacto img {
+      width: 45px; }
   .redesSociales {
     display: flex;
     flex-direction: row;
@@ -374,38 +416,8 @@ footer {
     justify-content: space-between;
     gap: 5px;
     margin: 15px; }
-  .redesSociales img {
-    width: 45px; }
-  .contacto img {
-    width: 45px; }
-  .card-body {
-    gap: 10px;
-    width: 100%; }
-  .section {
-    gap: 20px; }
-  .carousel-inner {
-    width: auto;
-    display: flex;
-    justify-content: flex-start;
-    font-size: xx-small; }
-  .card {
-    font-size: smaller;
-    justify-content: center;
-    justify-self: center; }
-  .card a {
-    font-size: xx-small; }
-  .grids {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto; }
-  .camas {
-    grid-template-columns: 1fr; }
-  .juguetes {
-    grid-template-columns: 1fr; }
-  .accesorios {
-    grid-template-columns: 1fr; }
-  .background {
-    font-size: small;
-    border-radius: 10%; } }
+    .redesSociales img {
+      width: 45px; } }
 
 @media (max-width: 320px) {
   .carousel-inner {

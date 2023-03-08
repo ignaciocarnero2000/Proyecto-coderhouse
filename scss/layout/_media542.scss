@@ -34,54 +34,18 @@
     gap: 10px;
     background-color:transparent;
     }
-    .piePagina{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .contacto{
-        display: flex;
-        flex-direction:row;
-        gap: 15px;
-    }
-    .redesSociales{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 5px;
-        margin: 15px;
-    }
-    .redesSociales img{
-        width: 45px;
-    }
-    .contacto img{
-        width: 45px;
-    }
-    .card-body{
-        gap: 10px;
-        width: 100%;
-    }
-    .section{
-        gap: 20px;
-    }
-    .carousel-inner{
-        width: auto;
-        display: flex;
-        justify-content: flex-start;
-        font-size: xx-small;
-    }
-    .card{
-        font-size: smaller;
-        justify-content: center;
-        justify-self: center;
-    }
-    .card a{
-        font-size: xx-small;
-    }
     .grids{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+    }
+    .item-4{
+        flex-direction: column;
+        justify-content: flex-end;
+        gap:10px;
+        img{
+            width: 35px;
+            height: 35px;
+        }
     }
     .camas{
         grid-template-columns: 1fr;
@@ -92,8 +56,53 @@
     .accesorios{
         grid-template-columns: 1fr;
     }
+    .carousel-inner{
+        width: auto;
+        display: flex;
+        justify-content: flex-start;
+        font-size: xx-small;
+    }
+    .card-body{
+        gap: 10px;
+        width: 100%;
+    }
+    .section{
+        gap: 20px;
+    }
+    .card{
+        font-size: smaller;
+        justify-content: center;
+        justify-self: center;
+        a{
+            font-size: xx-small;
+        }
+    }
     .background{
         font-size: small;
         border-radius: 10%;
+    }
+    .piePagina{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contacto{
+        display: flex;
+        flex-direction:row;
+        gap: 15px;
+        img{
+            width: 45px;
+        }
+    }
+    .redesSociales{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 5px;
+        margin: 15px;
+        img{
+            width: 45px;
+        }
     }
 }
