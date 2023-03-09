@@ -276,8 +276,8 @@ header {
 
 .background {
   background-color: rgba(217, 217, 217, 0.25);
-  width: auto;
-  font-size: x-large;
+  width: 100%;
+  font-size: xx-large;
   font-weight: 600;
   border-radius: 10%; }
   .background h2 {
@@ -326,7 +326,7 @@ footer {
     height: none; }
   .background {
     border-radius: 12%;
-    font-size: large; } }
+    font-size: x-large; } }
 
 @media (max-width: 768px) {
   header {
@@ -370,7 +370,7 @@ footer {
     width: 100%;
     height: none; }
   .background {
-    font-size: medium;
+    font-size: x-large;
     border-radius: 10%; } }
 
 @media (max-width: 425px) {
@@ -435,7 +435,7 @@ footer {
     .card a {
       font-size: xx-small; }
   .background {
-    font-size: small;
+    font-size: large;
     border-radius: 10%; }
   .piePagina {
     display: flex;
@@ -474,4 +474,6 @@ footer {
     gap: 10px; }
     .item-4 img {
       width: 35px;
-      height: 35px; } }
+      height: 35px; }
+  .background {
+    font-size: medium; } }
