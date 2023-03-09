@@ -84,13 +84,8 @@ header {
     width: 200px;
     border-radius: 10%; }
   .cards a {
-    background-color: black;
-    border-radius: 20%;
     color: white;
-    text-decoration: none;
-    font-size: x-large;
-    font-weight: 200;
-    transition: all 400ms ease; }
+    text-decoration: none; }
 
 .cards:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
@@ -221,6 +216,49 @@ header {
 .menuBoots {
   font-size: x-large; }
 
+.backgroundBalanceado {
+  background-image: url(../../assets/images/Fondo/Balanceados.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.boton {
+  font-family: 'Indie Flower', cursive;
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: white;
+  z-index: 1;
+  background: black;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden; }
+
+.boton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #1875FF;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms; }
+
+.boton:hover {
+  color: #e8e8e8; }
+
+.boton:hover::before {
+  width: 100%; }
+
 .cuepoSobre {
   display: flex;
   flex-flow: column wrap;
@@ -273,7 +311,7 @@ footer {
   .redesSociales img {
     width: 50px; }
 
-@media (max-width: 1232px) {
+@media (max-width: 1024px) {
   .item-3 {
     padding-left: 50px;
     gap: 50px; }
@@ -335,7 +373,7 @@ footer {
     font-size: medium;
     border-radius: 10%; } }
 
-@media (max-width: 542px) {
+@media (max-width: 425px) {
   header {
     width: 100%; }
   .titulo {
