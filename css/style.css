@@ -458,16 +458,6 @@ footer {
       width: 45px; } }
 
 @media (max-width: 320px) {
-  .carousel-inner {
-    width: 295px;
-    height: 320px;
-    display: flex;
-    justify-content: flex-start;
-    font-size: xx-small; }
-  .item1 {
-    width: 80px; }
-  .tem-2 {
-    font-size: smaller; }
   .item-4 {
     flex-direction: column;
     justify-content: flex-end;
@@ -475,5 +465,11 @@ footer {
     .item-4 img {
       width: 35px;
       height: 35px; }
+  .carousel-inner {
+    width: 295px;
+    height: 320px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: xx-small; }
   .background {
     font-size: medium; } }
