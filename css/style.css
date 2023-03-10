@@ -97,7 +97,8 @@ header {
 .grids {
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(6, 1fr);
-  grid-template-areas: "logo titulo titulo titulo item-4 item-4" "nav nav nav nav nav nav"; }
+  grid-template-areas: "logo titulo titulo titulo item-4 item-4"
+ "nav nav nav nav nav nav"; }
 
 .item-1 {
   grid-area: logo;
@@ -151,7 +152,9 @@ header {
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  grid-template-areas: "camas camas camas" "juguetes juguetes jueguetes" "accesorios accesorios accesorios"; }
+  grid-template-areas: "camas camas camas"
+ "juguetes juguetes jueguetes"
+ "accesorios accesorios accesorios"; }
 
 .camas {
   display: grid;
@@ -217,20 +220,19 @@ header {
   font-size: x-large; }
 
 .backgroundBalanceado {
-  background-image: url("../../assets/images/Fondo/Balanceados.jpg");
+  background-image: url(../../assets/images/Fondo/Balanceados.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
-.boton {
-  font-family: 'Indie Flower', cursive;
+.button {
   padding: 15px 25px;
   border: unset;
   border-radius: 15px;
-  color: white;
+  color: #212121;
   z-index: 1;
-  background: black;
+  background: #e8e8e8;
   position: relative;
   font-weight: 1000;
   font-size: 17px;
@@ -239,7 +241,7 @@ header {
   transition: all 250ms;
   overflow: hidden; }
 
-.boton::before {
+.button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -247,16 +249,16 @@ header {
   height: 100%;
   width: 0;
   border-radius: 15px;
-  background-color: #1875FF;
+  background-color: #212121;
   z-index: -1;
   -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   transition: all 250ms; }
 
-.boton:hover {
+.button:hover {
   color: #e8e8e8; }
 
-.boton:hover::before {
+.button:hover::before {
   width: 100%; }
 
 .cuepoSobre {
@@ -276,8 +278,8 @@ header {
 
 .background {
   background-color: rgba(217, 217, 217, 0.25);
-  width: 100%;
-  font-size: xx-large;
+  width: auto;
+  font-size: x-large;
   font-weight: 600;
   border-radius: 10%; }
   .background h2 {
@@ -326,24 +328,7 @@ footer {
     height: none; }
   .background {
     border-radius: 12%;
-    font-size: x-large; } }
-
-@media (max-width: 1024px) {
-  .item-3 {
-    padding-left: 50px;
-    gap: 50px; }
-  .camas {
-    grid-template-columns: repeat(2, 1fr); }
-  .juguetes {
-    grid-template-columns: repeat(2, 1fr); }
-  .accesorios {
-    grid-template-columns: repeat(2, 1fr); }
-  .cuerposobre {
-    width: 100%;
-    height: none; }
-  .background {
-    border-radius: 12%;
-    font-size: x-large; } }
+    font-size: large; } }
 
 @media (max-width: 768px) {
   header {
@@ -387,7 +372,7 @@ footer {
     width: 100%;
     height: none; }
   .background {
-    font-size: x-large;
+    font-size: medium;
     border-radius: 10%; } }
 
 @media (max-width: 542px) {
@@ -452,91 +437,7 @@ footer {
     .card a {
       font-size: xx-small; }
   .background {
-    font-size: large;
-    border-radius: 10%; }
-  .piePagina {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  .contacto {
-    display: flex;
-    flex-direction: row;
-    gap: 15px; }
-    .contacto img {
-      width: 45px; }
-  .redesSociales {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 5px;
-    margin: 15px; }
-    .redesSociales img {
-      width: 45px; } }
-
-@media (max-width: 425px) {
-  header {
-    width: 100%; }
-  .titulo {
-    width: 100%;
-    justify-content: space-between;
-    align-self: center;
-    gap: 35px; }
-  .logo img {
-    width: 80px;
-    border-radius: 50%; }
-  .tituloP {
-    font-size: medium; }
-  nav .menu {
-    flex-direction: column;
-    align-items: center; }
-  .cuerpoIndex {
-    flex-direction: column;
-    font-size: medium;
-    background: url("../assets/images/Fondo/photo-1623387641168-d9803ddd3f35.jfif") no-repeat center center fixed;
-    background-size: cover; }
-  .galery {
-    padding: 30px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background-color: transparent; }
-  .grids {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto; }
-  .item-4 {
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 10px; }
-    .item-4 img {
-      width: 35px;
-      height: 35px; }
-  .camas {
-    grid-template-columns: 1fr; }
-  .juguetes {
-    grid-template-columns: 1fr; }
-  .accesorios {
-    grid-template-columns: 1fr; }
-  .carousel-inner {
-    width: auto;
-    display: flex;
-    justify-content: flex-start;
-    font-size: xx-small; }
-  .card-body {
-    gap: 10px;
-    width: 100%; }
-  .section {
-    gap: 20px; }
-  .card {
-    font-size: smaller;
-    justify-content: center;
-    justify-self: center; }
-    .card a {
-      font-size: xx-small; }
-  .background {
-    font-size: large;
+    font-size: small;
     border-radius: 10%; }
   .piePagina {
     display: flex;
@@ -559,18 +460,20 @@ footer {
       width: 45px; } }
 
 @media (max-width: 320px) {
-  .item-4 {
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 10px; }
-    .item-4 img {
-      width: 35px;
-      height: 35px; }
   .carousel-inner {
     width: 295px;
     height: 320px;
     display: flex;
     justify-content: flex-start;
     font-size: xx-small; }
-  .background {
-    font-size: medium; } }
+  .item1 {
+    width: 80px; }
+  .tem-2 {
+    font-size: smaller; }
+  .item-4 {
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px; }
+    .item-4 img {
+      width: 35px;
+      height: 35px; } }
