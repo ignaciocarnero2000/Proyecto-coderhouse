@@ -268,7 +268,11 @@ header {
   width: 100%; }
 
 .menuBoots {
-  font-size: x-large; }
+  font-size: x-large;
+  display: flex;
+  justify-content: space-around; }
+  .menuBoots ul {
+    gap: 100px; }
 
 .balanceados {
   background-image: url("https://www.zooplus.es/magazine/wp-content/uploads/2019/10/1-2-1024x682.jpg");
@@ -472,6 +476,12 @@ footer {
     grid-template-columns: repeat(2, 1fr); }
   .accesorios {
     grid-template-columns: repeat(2, 1fr); }
+  .menuBoots {
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between; }
+    .menuBoots ul {
+      gap: 60px; }
   .cuerposobre {
     width: 100%;
     height: none; }
@@ -512,6 +522,10 @@ footer {
   .backgroundGatos {
     background-image: url("https://fotografias.lasexta.com/clipping/cmsimages02/2022/05/17/B2803297-FF70-4425-A1C0-059900EDFAB8/gatos_104.jpg?crop=4000,4000,x710,y0&width=1200&height=1200&optimize=low&format=webply") no-repeat center center fixed;
     color: white; }
+  .menuBoots {
+    font-size: large; }
+    .menuBoots ul {
+      gap: 0px; }
   .carousel-inner {
     padding: 20px; }
   .cuerposobre {

@@ -12,6 +12,14 @@
 .accesorios{
     grid-template-columns: repeat(2,1fr);
 }
+.menuBoots{
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between;
+    ul{
+        gap: 60px
+    }
+}
 .cuerposobre{
     width: 100%;
     height: none;

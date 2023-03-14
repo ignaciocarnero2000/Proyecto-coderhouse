@@ -1,5 +1,10 @@
 .menuBoots{
     font-size: x-large;
+    display: flex;
+    justify-content: space-around;
+    ul{
+        gap: 100px;
+    }
 }
 .balanceados{
     background-image: url("https://www.zooplus.es/magazine/wp-content/uploads/2019/10/1-2-1024x682.jpg");
