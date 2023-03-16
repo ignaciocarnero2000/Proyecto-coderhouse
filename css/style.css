@@ -263,9 +263,6 @@ header {
   width: 100%;
   padding: 0px; }
 
-.tituloP {
-  font-weight: bold; }
-
 .menuBoots {
   font-size: x-large; }
   .menuBoots ul {
@@ -656,6 +653,8 @@ footer {
   .grids {
     grid-template-columns: 1fr;
     grid-template-rows: auto; }
+  .item-2 {
+    padding-right: 25px; }
   .item-4 {
     flex-direction: column;
     justify-content: flex-end;
