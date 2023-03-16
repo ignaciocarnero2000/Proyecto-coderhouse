@@ -1,9 +1,12 @@
+h1{
+    font-weight: bold;
+    font-size: xx-large;
+}
 .menuBoots{
     font-size: x-large;
-    display: flex;
-    justify-content: space-around;
     ul{
-        gap: 100px;
+        gap: 85px;
+        padding-bottom: 20px;
     }
 }
 .balanceados{

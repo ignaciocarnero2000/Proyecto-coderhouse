@@ -267,12 +267,15 @@ header {
   background-position: center;
   width: 100%; }
 
+h1 {
+  font-weight: bold;
+  font-size: xx-large; }
+
 .menuBoots {
-  font-size: x-large;
-  display: flex;
-  justify-content: space-around; }
+  font-size: x-large; }
   .menuBoots ul {
-    gap: 100px; }
+    gap: 85px;
+    padding-bottom: 20px; }
 
 .balanceados {
   background-image: url("https://www.zooplus.es/magazine/wp-content/uploads/2019/10/1-2-1024x682.jpg");
@@ -390,7 +393,7 @@ header {
   background-color: rgba(217, 217, 217, 0.25);
   width: 100%;
   font-size: xx-large;
-  font-weight: 600;
+  font-weight: 800;
   border-radius: 10%; }
   .background h2 {
     text-decoration: underline; }
@@ -599,9 +602,8 @@ footer {
     justify-self: center; }
     .card a {
       font-size: xx-small; }
-  .background {
-    font-size: large;
-    border-radius: 10%; }
+  .backgroundGatos {
+    background-position: right; }
   .piePagina {
     display: flex;
     flex-direction: column;
@@ -683,9 +685,6 @@ footer {
     justify-self: center; }
     .card a {
       font-size: xx-small; }
-  .background {
-    font-size: large;
-    border-radius: 10%; }
   .piePagina {
     display: flex;
     flex-direction: column;
@@ -719,6 +718,4 @@ footer {
     height: 320px;
     display: flex;
     justify-content: flex-start;
-    font-size: xx-small; }
-  .background {
-    font-size: medium; } }
+    font-size: xx-small; } }
