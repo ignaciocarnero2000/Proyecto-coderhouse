@@ -263,9 +263,8 @@ header {
   width: 100%;
   padding: 0px; }
 
-h1 {
-  font-weight: bold;
-  font-size: xx-large; }
+.tituloP {
+  font-weight: bold; }
 
 .menuBoots {
   font-size: x-large; }
@@ -510,6 +509,8 @@ footer {
     align-items: center;
     gap: 20px;
     background-color: transparent; }
+  .item-2 {
+    font-size: large; }
   .backgroundPerros, .backgroundGatos {
     background-image: url("https://media.istockphoto.com/id/481198620/es/foto/terrier-jugando-con-una-pelota-de-coloridos.jpg?b=1&s=170667a&w=0&k=20&c=VDpLMMtIR_X_9WpOfJ6x9vLJ01XCNBs-EzoNLS_hEPg=") no-repeat center center fixed; }
   .camas {
@@ -569,6 +570,9 @@ footer {
   .grids {
     grid-template-columns: 1fr;
     grid-template-rows: auto; }
+  .item-2 {
+    font-size: large;
+    padding-right: 35px; }
   .item-4 {
     flex-direction: column;
     justify-content: flex-end;
@@ -655,7 +659,8 @@ footer {
   .item-4 {
     flex-direction: column;
     justify-content: flex-end;
-    gap: 10px; }
+    gap: 10px;
+    grid-column-start: 5; }
     .item-4 img {
       width: 35px;
       height: 35px; }
@@ -702,6 +707,10 @@ footer {
       width: 45px; } }
 
 @media (max-width: 320px) {
+  .item-2 {
+    padding-right: 25px; }
+  .item-3 {
+    padding-right: 20px; }
   .item-4 {
     flex-direction: column;
     justify-content: flex-end;

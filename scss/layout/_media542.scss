@@ -38,6 +38,10 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
+    .item-2{
+        font-size: large;
+        padding-right: 35px;
+    }
     .item-4{
         flex-direction: column;
         justify-content: flex-end;
